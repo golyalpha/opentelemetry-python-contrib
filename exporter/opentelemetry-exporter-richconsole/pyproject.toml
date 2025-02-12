@@ -34,6 +34,9 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/exporter/opentelemetry-exporter-richconsole"
 
+[project.entry-points.opentelemetry_traces_exporter]
+richconsole = "opentelemetry.exporter.richconsole:RichConsoleSpanExporter"
+
 [tool.hatch.version]
 path = "src/opentelemetry/exporter/richconsole/version.py"
 
